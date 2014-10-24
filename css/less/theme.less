@@ -1,0 +1,342 @@
+//
+// Load core variables and mixins
+// --------------------------------------------------
+// @import url("http://fonts.googleapis.com/css?family=Roboto:400,400italic,700");
+// @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700");
+//@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700,300italic");
+@import "variables.less";
+@import "mixins.less";
+
+//
+// Base
+// --------------------------------------------------
+// 
+footer {
+  h3 {
+    span {
+      text-transform: uppercase;
+    }
+  }
+}
+hr {
+  border: none;
+}
+#paralaxSlice4 {
+  //background-color: lighten(@brand-primary, 35%);
+  border-top: solid 5px lighten(@brand-primary, 35%);
+  border-bottom: solid 5px lighten(@brand-primary, 35%);
+  padding: 40px;
+  form {
+    margin: 20px 0;
+  }
+  img {
+    padding: 5px;
+  }
+  .img-responsive {
+    display: inline-block;
+  }
+}
+#paralaxSlice6 {
+  //background-color: lighten(@brand-primary, 35%);
+  border-top: solid 5px lighten(@brand-primary, 35%);
+  border-bottom: solid 5px lighten(@brand-primary, 35%);
+  padding: 40px;
+  margin-bottom: 20px;
+  form {
+    margin: 20px 0;
+  }
+  img {
+    padding: 0 5px;
+    margin-top: -5px;
+  }
+}
+
+#paralaxSlice5 {
+  background-color: lighten(@gray-light, 35%);
+  padding: 20px;
+}
+.slider-bg {
+  background:url(../images/slider/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#googlemaps { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  border-bottom: 300px solid #FFFFFF;
+  padding-top: 100px;
+}
+ 
+#contactform { 
+  position: relative; 
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  margin: 60px auto 0;
+  padding: 10px;
+  background: black;
+  height: auto;
+  opacity: .45; /* Set the opacity for a slightly transparent Google Form */ 
+  color: white;
+}
+.form-map {
+  background-color: #FFFFFF;
+}
+.boxFocus {
+  background-color: #FFFFFF;
+  margin-top: 100px;
+  &.color2 {
+    background-color: #39afea;
+  }
+}
+.nav-logo {
+  img {
+    position: absolute;
+    margin-left: 20px;
+  }
+}
+.btn-form {
+  width: 80%;
+  padding: 15px 0;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.btn-nav {
+  margin-top:10px;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn-join {
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 20px 40px;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.btn-join2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 15px 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.box-icon-main{
+  border: 1px solid @gray-lighter;
+  text-align: center;
+  img {
+    height: 200px;
+    width: 100%;
+    border: 0;
+  }
+  h2, p {
+    padding: 0px 20px;
+    text-align: center;
+  }
+  h2 {
+    padding-top: 10px;
+    &:after {
+      border: none !important;
+    }
+  }
+  i {
+    background-color: #39afea;
+    border-radius: 50%;
+    padding: 25px 18px;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    border:15px solid #FFFFFF;
+    display: inline-block;
+    margin-left:-60px;
+    margin-top: -50px;
+    color: #FFFFFF;
+  }
+}
+.events-details {
+  padding: 0px 5px;
+  .date {
+    text-align: center;
+    background-color: #39afea;
+    padding: 20px 10px 10px 10px;
+    b {
+      display: block;
+      color: #FFFFFF;
+      font-size: 36px;
+      margin-top: 15px;
+      padding-bottom: 20px;
+    }
+    small {
+      font-size: 14px;
+      text-decoration: none;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+  }
+  .event-desc {
+    h3 {
+      color:#39afea;
+    }
+    p {
+      font-size: 12px;
+      color:@gray-light;
+    }
+  }
+}
+.contact-box-desc {
+  position: relative;
+  bottom: 0;
+  margin-top: 430px;
+}
+.social-footer {
+  background-color: #e5e5e5;
+  label {
+    float: left;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: right;
+  }
+  h4 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    small {
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      list-style: none;
+      float: left;
+      width: 24%;
+      display: inline-block;
+      text-align: center;
+      margin-right: 1%;
+    }
+  }
+      .facebook {
+      background-color: #3b5998;
+    }
+    .twitter {
+      background-color: @brand-primary;
+    }
+    .google {
+      background-color: @brand-danger;
+    }
+    .youtube {
+      background-color: @brand-danger;
+    }
+  i {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    color:#FFFFFF;
+    padding: 2px 17px;
+
+  }
+}
+.rights-footer {
+  background-color: #39afea;
+  padding: 25px 0px 10px 0;
+  a {
+    color:#FFFFFF;
+  }
+}
+.membership-content {
+  .note {
+    padding: 10px 25px;
+    background-color: @gray-lighter;
+  }
+  p {
+    text-align: justify;
+    margin: 15px 0;
+  }
+}
+.selection-tab {
+  margin-bottom: 0 !important;
+  li {
+    width: 50%;
+    font-weight: 600;
+    &.active a {
+      background-color: @brand-primary;
+      color: #FFFFFF;
+    }
+  }
+}
+.blue-tab {
+  border-right: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.tab-content {
+  padding: 15px;
+  text-align: left;
+  li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    span {
+      display: block;
+      font-size: 12px;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+}
+.membership-form {
+  text-align: left;
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+  }
+  h3 {
+    small {
+      display: block;
+    }
+  }
+}
+.well {
+  background-color: #fefefe;
+  padding-top: 10px;
+  padding-bottom: 0;
+  &.warning {
+    background-color: lighten(@gray, 10%);
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 30px;
+    margin-bottom: 50px;
+    h2 {
+      font-weight: 600;
+      color:#FFFFFF !important;
+      line-height: 2em;
+      &:after {
+        border: none;
+      }
+      a {
+        color:lighten(@brand-primary, 10%);
+      }
+    }
+  }
+}.pt40 {
+  &.hero {
+    text-align: center;
+    h1 {
+      font-weight: 300;
+    }
+  }
+  h1 {
+    small {
+      color: @gray-light;
+    }
+  }
+}
